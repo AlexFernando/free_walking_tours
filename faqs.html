@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Free walking tour Cusco, cusco free walking tour, walking tour cusco, Free walking tours Cusco, Free walking tour in Cusco, free walking tour cuzco, Free walking tours in Cusco, free walking tour, Best free tour in Cusco, Best historical walking tour, Free Tour in Cusco, Free tours in Cusco, Free walking tours en español, Cusco free tours, free city tour, Tours by foot, Tour gratis en Cusco, Tour a pie gratis en Cusco, Paseos gratis a pie en Cusco, Free guided Cusco Tour, caminatas gratuitas, locals, culture, history, free pisco sour, 12 angles stone">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+    <!-- open-iconic-bootstrap (icon set for bootstrap) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" integrity="sha256-BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ=" crossorigin="anonymous" />
+
+    <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--favicon.ico links-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>WildFreeWalkingToursCusco</title>
+
+    <style>
+        #map {
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target="#navbar1" data-offset="70">
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <nav id="navbar1" class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #272727;">
+        <!--#006400;-->
+        <!--<a class="navbar-brand" href="#home">
+                <img src="images/logo.png" height="50" width="50" alt="logo">
+            </a>-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="nav navbar-nav d-flex" data-spy="scroll" id="doScroll">
+                <div class="d-flex flex-column d-sm-flex flex-sm-row">
+                    <a class="lang nav-item nav-link" id="HOMEPAGE" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="lang nav-item nav-link" id="ABOUT" href="index.html">About us</a>
+                    <li class="nav-item dropdown">
+                        <a class="lang nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                FreeTours
+                            </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item link-child" href="tour_one.html">Tour 10:00</a>
+                            <a class="dropdown-item link-child" href="tour_second.html">Tour 12:30</a>
+                            <a class="dropdown-item link-child" href="tour_third.html">Tour 15:00</a>
+                        </div>
+                    </li>
+
+                    <a class="lang nav-item nav-link" title="Customer's Reviews" id="REVIEWS" href="index.html">Reviews</a>
+                    <a class="lang nav-item nav-link" title="Contact Form" id="CONTACTNAV" href="contact.html">Contact</a>
+                    <a class="lang nav-item nav-link" title="local guides" id="GUIDES" href="guides.html">Meet our Guides</a>
+                    <a class="lang nav-item nav-link" title="Tours Cusco" id="MORETOURS" href="tourscusco.html">Tours & Treks</a>
+                    <a class="lang nav-item nav-link" title="Question & Answers" id="FAQS" href="#">FAQ's</a>
+                </div>
+
+                <!--Social Networks-->
+                <div class="sociales d-flex">
+                    <a href="https://www.tripadvisor.com.pe/Attraction_Review-g294314-d12493345-Reviews-Wild_Free_Walking_Tour_Cusco-Cusco_Cusco_Region.html" target="_blank"> <i class="fab fa-tripadvisor fa-2x pr-4"></i></a>
+                    <a href="https://www.facebook.com/WildFreeWalkingTourCusco/" target="_blank"><i class="fab fa-facebook fa-2x pr-4"></i></a>
+                    <a href="https://wa.me/+51974773203" target="_blank"><i class="fab fa-whatsapp fa-2x pr-4"></i></a>
+                    <a href="https://www.instagram.com/wildfreewalkingtourscusco/" target="_blank"> <i class="fab fa-instagram fa-2x pr-4"></i> </a>
+                </div>
+
+                <!--Languages buttons-->
+
+                <div class="d-flex flags-language">
+                    <a class="translate nav-item nav-link" id="en-gb" href="#en"><span class="flag-icon flag-icon-us"> </span> EN</a>
+                    <a class="translate nav-item nav-link" id="es" href="#es"><span class="flag-icon flag-icon-es"> </span> ES</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--FAQS starts-->
+    <div class="row" id="faqs">
+        <div class="container-fluid mt-5 mb-5">
+            <h2 class="lang  text-center mt-5 mb-5  my-underline" data-animation="slide-Down" style="padding-top: 2rem">FAQ's</h2>
+            <div class="container">
+                <div class="lang  alert alert-warning mx-auto font-weight-bold text-center " data-animation="slide-in-left" id="DETAILS_ALERT_1" role="alert">
+                    Departures: From Monday to Sunday
+                </div>
+                <div class="accordion " data-animation="slide-in-right" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="lang btn btn-link" id="Q1" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ​   1.- Do I require a reservation for the tour?
+                          </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="lang card-body" id="A1">
+                                To guarantee your place, use the online booking form, which can be found at the CONTACT section.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="lang btn btn-link collapsed" id="Q2" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            2.- What time does the tour start?
+                          </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="lang card-body" id="A2">
+                                Show up 5 minutes before the start time:
+                            </div>
+                            <ul>
+                                <li class="lang" id="A2_1">
+                                    Morning tour starts at 10h:00 daily.
+                                </li>
+                                <li class="lang" id="A2_2">
+                                    Midday tour starts at 12h:30 daily.
+                                </li>
+                                <li class="lang" id="A2_3">
+                                    Afternoon tour starts 15h00 daily.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="lang btn btn-link collapsed" id="Q3" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            3.- How long does the tour take?
+                          </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="lang card-body" id="A3">
+                                The tour will generally last 2h - 2.5h.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <h2 class="mb-0">
+                                <button class="lang btn btn-link collapsed" id="Q4" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                4.- Where is the meeting point?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                            <div class="lang card-body" id="A4">
+                                The meeting point is located at Plazoleta Espinar (1 block away comming from Main Square and 3 blocks away comming from San Pedro Market), in front of "La Merced" Church. Look for the friendly team in the ‘WildFreeWalkingTours’ branded, ORANGES t-shirts,
+                                don’t get confused by others.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFive">
+                            <h2 class="mb-0">
+                                <button class="lang btn btn-link collapsed" id="Q5" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            5.- What languages are the tour offered in? 
+                        </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                            <div class="lang card-body" id="A5">
+                                The tour is offered in English and Spanish . DO IT WITH THE PROS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingSix">
+                            <h2 class="mb-0">
+                                <button class="lang btn btn-link collapsed" id="Q6" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                6.- Will there be any entry fees or monetary charges whilst on the tour?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                            <div class="lang card-body" id="A6">
+                                There are no extra costs whilst on the tour whatsoever. You may however, bring some spending money as we will pass by many artisanal stores and eateries on the way and also sometimes you fell like taking some pictures with the locals and their cute llamas
+                                and alpacas as well as you might donate some coins to some musicians when they performed their music.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingSeven">
+                            <h2 class="mb-0">
+                                <button class="lang btn btn-link collapsed" id="Q7 " type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                7.- Are there a maximum number of people allowed to join the tour?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                            <div class="lang card-body" id="A7">
+                                Yes, 15 people maximum, we use amplification system for voice projection for better understanding.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingEight">
+                            <h2 class="mb-0">
+                                <button class="lang btn btn-link collapsed" id="Q8" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                    8.- Do I need to bring anything with me?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+                            <div class="lang card-body" id="A8">
+                                Cusco has very unpredictable weather, therefore we suggest that you equip yourselves with the following:
+                            </div>
+                            <ul>
+                                <li class="lang" id="A8_1">Sun Lotion</li>
+                                <li class="lang" id="A8_2">Rain Jacket / Umbrella</li>
+                                <li class="lang" id="A8_3">Drinking Water</li>
+                                <li class="lang" id="A8_4">Coins (for photographs with locals & animals)</li>
+                                <li class="lang" id="A8_5">Camera / Video Camera</li>
+                                <li class="lang" id="A8_6">Wear Trainers / Walking Shoes</li>
+                                <li class="lang" id="A8_7">Sunglasses</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingNine">
+                            <h2 class="mb-0">
+                                <button class="lang btn btn-link collapsed" id="Q9" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                9.- Is the tour really free?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseNine" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="lang card-body" id="A9">
+                                WildFreeWalkingTours does not charge a fee for its tours. However, we do ask that if you enjoy your time with us and have a valuable and fullfilling experience, that you consider to leave us a tip, it's important to know as some people we had before ,
+                                they say it's free and walk away without even saying thanks, we know that in many countries tipping is not custom since the salaries are very high and allows people to go on holidays and get to see the world, however this
+                                is our job and we don't work for the government or are financially supported by other companies, we only get your TIPS. so thanks a lot. we make sure all our team is happy and willing to do the future tours.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingTen">
+                            <h2 class="mb-0">
+                                <button class="lang btn btn-link collapsed" id="Q10" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                    10.- Are any of the other free walking tours in Cuzco related to WildFreeWalkingTours?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
+                            <div class="lang card-body" id="A10">
+                                No. We operate independently from all other walking tours in Cuzco. For truly the best experience be sure to look for the friendly team in the ‘WildFreeWalkingTours’ branded, ORANGE t-shirts and meet us at Plazoleta Espinar (1 block away comming from
+                                Main Square and 3 blocks away coming from San Pedro Market), in front of "La Merced" Church.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lang  alert alert-danger mx-auto font-weight-bold mt-5 " data-animation="slide-in-right" id="DETAILS_ALERT_2" role="alert">
+                        Warning: There are people who claim to be our workers. We don't have staff in different squares or streets. Don't get confused!
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--FAQs ends-->
+
+    <!--Footer-->
+    <footer id="footer" class="footer">
+        <div class="container d-sm-flex flex-sm-column flex-md-row flex-lg-row justify-content-around align-content-center">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 " data-animation="slide-in-right" data-delay=".1s">
+                <h3 class="lang mb-4 mt-5 text-center" id="T1_FOOTER">More Tours in Cusco...</h3>
+                <div class="d-flex flex-column link-tours">
+                    <ul>
+                        <li><a href="https://www.wildperutravel.org/producto/salkantay-a-machu-picchu-5diasy4noche/" target="_blank">Salkantay a Machu Picchu 5 Días y 4 Noches</a></li>
+                        <li><a href="https://www.wildperutravel.org/producto/maras-moray-tour/" target="_blank">Maras-Moray Tour</a></li>
+                        <li><a href="https://www.wildperutravel.org/producto/valle-sagrado-machu-picchu-tour/" target="_blank">Valle Sagrado – Machu Picchu tour</a></li>
+                        <li><a href="https://www.wildperutravel.org/producto/vinicunca-montana-de-7-colores/" target="_blank">Vinicunca (Rainbow Mountain)</a></li>
+                        <li><a href="https://www.wildperutravel.org/producto/laguna-humantay-1dia/" target="_blank">Laguna Humantay</a></li>
+                        <li><a href="https://www.wildperutravel.org/producto/machu-picchu-full-day/" target="_blank">Machu Picchu Full Day</a></li>
+                        <li><a href="https://www.wildperutravel.org/producto/inca-jungle-tour/" target="_blank">Inka Jungle Tour 4 días y 3 noches</a></li>
+                        <li><a href="https://www.wildperutravel.org/producto/choquequirao-trek-5-dias-y-4-noches/" target="_blank">Choquequirao Trek 5 Días y 4 noches</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex-column col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <h3 class="lang text-center mb-4 mt-5 text-center" id="T2_FOOTER">Certifications</h3>
+                <div class="d-flex  justify-content-around align-content-center">
+                    <img class="img-footer  mb-3" data-animation="flip-in-x" data-delay=".1s" src="images/dircetur_1.png" alt="logo">
+                    <img class="img-footer  mb-3" data-animation="flip-in-x" data-delay=".1s" src="images/promeperu.png" alt="logo">
+                </div>
+
+                <div class="d-flex  justify-content-around align-content-center">
+                    <img class="img-footer  mb-4" data-animation="flip-in-x" data-delay=".1s" src="images/maeca_peru_1.png" alt="logo">
+                    <img class="img-footer  mb-4" data-animation="flip-in-x" data-delay=".1s" src="images/green_tourism_1.png" alt="logo">
+                </div>
+
+                <div class="d-flex  justify-content-around align-content-center">
+                    <img class="img-footer  mb-4" data-animation="flip-in-x" data-delay=".1s" src="images/trip.png" alt="logo">
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 " data-animation="slide-in-left" data-delay=".1s">
+                <h3 class="lang mb-4 mt-5 text-center" id="T3_FOOTER">Social Media</h3>
+                <nav class="sociales d-flex justify-content-center">
+                    <a href="https://www.facebook.com/WildFreeWalkingTourCusco/" target="_blank"><i class="fab fa-facebook fa-3x pr-4"></i></a>
+                    <a href="https://wa.me/+51974773203" target="_blank"><i class="fab fa-whatsapp fa-3x pr-4"></i></a>
+                    <a href="https://www.instagram.com/wildfreewalkingtourscusco/" target="_blank"> <i class="fab fa-instagram fa-3x pr-4"></i> </a>
+                    <a href="mailto:wildfreewalkingtours@gmail.com" target="_blank"> <i class="far fa-envelope fa-3x pr-4"></i></a>
+
+                </nav>
+                <p class="lang thanks mt-5 text-center" id="P_FOOTER">Hey Dear Travellers! Thanks for your preference! You can check more interesting tours and treks at: </p>
+                <div class="text-center">
+                    <span class=""> <a  class="link-agency" href="https://www.wildperutravel.org/"  target="_blank"> Wild Peru Travel</a></span>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="copyright d-flex flex-column justify-content-center align-items-center text-center">
+            <a class="icon-up" href="#home"><i class="fas fa-angle-double-up"></i></a>
+            <p id="copyright"><span>© 2020 <a href="">Free Walking Tour Cusco.</a></span> Powered By <span> <a href="https://www.wildfreewalkingtours.com/" target="_blank"> Wild Free Walking Tours</a></span></p>
+        </div>
+    </footer>
+
+
+    <!--<footer>
+        <div class="copyright flex-column">
+            
+            <div>
+                <p id="copyright"><span>© 2019 <a href="">Wild Free Walking Tours.</a></span> Powered By <span> <a href="https://www.wildperutravel.org/" target="_blank"> Wild Peru Travel</a></span></p>
+            </div>
+        </div>        
+    </footer>-->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Optional JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+    <script async src="https://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=716&amp;locationId=12493345&amp;lang=en_US&amp;rating=true&amp;nreviews=5&amp;writereviewlink=true&amp;popIdx=true&amp;iswide=false&amp;border=true&amp;display_version=2" data-loadtrk
+        onload="this.loadtrk=true"></script>
+    <script async src="https://www.jscache.com/wejs?wtype=excellent&amp;uniq=638&amp;locationId=12493345&amp;lang=es_PE&amp;display_version=2" data-loadtrk onload="this.loadtrk=true"> </script>
+    <script async src="https://www.jscache.com/wejs?wtype=rated&amp;uniq=841&amp;locationId=12493345&amp;lang=es_PE&amp;display_version=2" data-loadtrk onload="this.loadtrk=true"></script>
+
+
+</body>
+
+</html>
